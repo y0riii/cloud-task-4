@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    options {
+        githubProjectProperty(projectUrlStr: 'https://github.com/y0riii/cloud-task-4/')
+    }
+
     tools {
         maven 'maven-3'
         jdk 'jdk-17'
