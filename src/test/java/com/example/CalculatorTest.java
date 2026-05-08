@@ -38,6 +38,12 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testDivideReturnsFractionalResult() {
+        assertEquals(2.5, calculator.divide(5, 2));
+        assertEquals(-2.5, calculator.divide(5, -2));
+    }
+
+    @Test
     public void testDivideByZero() {
         assertThrows(IllegalArgumentException.class, () -> {
             calculator.divide(1, 0);
