@@ -6,5 +6,4 @@ target/
 .idea/
 *.iml
 *.log
-Jenkinsfile
 repository_link.txt
