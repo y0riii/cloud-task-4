@@ -46,4 +46,12 @@ public class CalculatorTest {
             calculator.divide(-5, 0);
         });
     }
+
+    @Test
+    public void testModulo() {
+        assertEquals(0, calculator.modulo(6, 3));
+        assertEquals(1, calculator.modulo(7, 3));
+        assertEquals(2, calculator.modulo(2, 3));
+        assertEquals(-2, calculator.modulo(-2, -3));
+    }
 }

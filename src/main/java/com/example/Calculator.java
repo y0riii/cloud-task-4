@@ -13,6 +13,10 @@ public class Calculator {
         return a * b;
     }
 
+    public int modulo(int a, int b) {
+        return a % b;
+    }
+
     public double divide(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("Division by zero is not allowed.");
