@@ -11,6 +11,7 @@ public class CalculatorTest {
         assertEquals(5, calculator.add(2, 3));
         assertEquals(-1, calculator.add(2, -3));
         assertEquals(-5, calculator.add(-2, -3));
+        assertEquals(0, calculator.add(0, 0));
     }
 
     @Test
@@ -18,6 +19,7 @@ public class CalculatorTest {
         assertEquals(1, calculator.subtract(4, 3));
         assertEquals(7, calculator.subtract(4, -3));
         assertEquals(-1, calculator.subtract(-4, -3));
+        assertEquals(0, calculator.subtract(0, 0));
     }
 
     @Test
@@ -27,6 +29,9 @@ public class CalculatorTest {
         assertEquals(0, calculator.multiply(0, 3));
         assertEquals(-6, calculator.multiply(2, -3));
         assertEquals(6, calculator.multiply(-2, -3));
+        assertEquals(0, calculator.multiply(0, 0));
+        assertEquals(5, calculator.multiply(5, 1));
+        assertEquals(-5, calculator.multiply(-5, 1));
     }
 
     @Test
@@ -35,6 +40,7 @@ public class CalculatorTest {
         assertEquals(-2.0, calculator.divide(6, -3));
         assertEquals(2.0, calculator.divide(-6, -3));
         assertEquals(0.0, calculator.divide(0, 5));
+        assertEquals(5, calculator.divide(5, 1));
     }
 
     @Test
